@@ -1,0 +1,77 @@
+{
+  "revision": "D simple loose-slide",
+  "saved_step_valid": true,
+  "single_connected_solids": true,
+  "case_envelope_mm": [
+    144.0,
+    96.0,
+    41.0
+  ],
+  "carrier_print_envelope_mm": [
+    138.0,
+    91.1,
+    23.4
+  ],
+  "closed_carrier_overlap_mm3": 0,
+  "carrier_slide_checks": [
+    {
+      "Y_mm": -100,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -80,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -60,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -40,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -20,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -10,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -3,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -1,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": -0.3,
+      "carrier_overlap_mm3": 0
+    },
+    {
+      "Y_mm": 0,
+      "carrier_overlap_mm3": 0
+    }
+  ],
+  "PCB_back_z_mm": 26.6,
+  "nominal_screen_back_z_mm": 10.2,
+  "board_front_reserve_gap_to_screen_mm": 4.400000000000002,
+  "loose_slide_clearance_mm": {
+    "left_and_right": 0.7000000000000002,
+    "bottom": 0.6000000000000014,
+    "leading_and_trailing": 0.7
+  },
+  "retention": "No snap latch. Secure with temporary tape or hook-and-loop while prototyping.",
+  "strap_inside_clearance_to_stm_back_reserve_mm": 1.2000000000000028,
+  "window_covers_AA": true,
+  "tested_scope": "Saved front shell and loose-slide carrier validity, board envelopes, no seated overlap, and slide sweep at selected poses. External plugs must be disconnected before opening.",
+  "unverified": [
+    "Real screen ear Z datum",
+    "Actual wired board height",
+    "Fit on the intended printer and material",
+    "Temporary tape retention",
+    "Power bank dimensions and output stability"
+  ]
+}

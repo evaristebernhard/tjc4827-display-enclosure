@@ -1,0 +1,14 @@
+# User-provided source files and scratch data
+/tmp/
+/*.zip
+/*.pdf
+
+# Keep only the current public prototype revision from generated outputs
+/output/*
+!/output/screwless_simple/
+!/output/TJC4827_screwless_simple_D.zip
+
+# Python and CAD tool caches
+__pycache__/
+*.py[cod]
+.venv/

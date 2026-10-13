@@ -1,0 +1,86 @@
+{
+  "front": {
+    "stl": {
+      "watertight_by_edge_incidence": true,
+      "consistent_winding": true,
+      "connected_body_count": 1,
+      "triangles": 2352,
+      "vertices_after_welding": 1176,
+      "welding_tolerance_mm": 0.0001,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 66225.14328045047,
+      "volume_error_percent": 0.004144659467328927,
+      "bbox_mm": [
+        144.0,
+        96.0,
+        41.0
+      ],
+      "minimum_z_mm": 0.0,
+      "self_intersection_audit": "Not computed for the tessellated mesh; native saved STEP was validated."
+    },
+    "3mf": {
+      "watertight_by_edge_incidence": true,
+      "consistent_winding": true,
+      "connected_body_count": 1,
+      "triangles": 2352,
+      "vertices_after_welding": 1176,
+      "welding_tolerance_mm": 0.0001,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 66225.14328045047,
+      "volume_error_percent": 0.004144659467328927,
+      "bbox_mm": [
+        144.0,
+        96.0,
+        41.0
+      ],
+      "minimum_z_mm": 0.0,
+      "self_intersection_audit": "Not computed for the tessellated mesh; native saved STEP was validated.",
+      "unit": "millimeter",
+      "build_item_count": 1
+    }
+  },
+  "carrier": {
+    "stl": {
+      "watertight_by_edge_incidence": true,
+      "consistent_winding": true,
+      "connected_body_count": 1,
+      "triangles": 3180,
+      "vertices_after_welding": 1584,
+      "welding_tolerance_mm": 0.0001,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 39193.53837401937,
+      "volume_error_percent": 0.0062563194115959645,
+      "bbox_mm": [
+        138.0,
+        91.1,
+        23.4
+      ],
+      "minimum_z_mm": 0.0,
+      "self_intersection_audit": "Not computed for the tessellated mesh; native saved STEP was validated."
+    },
+    "3mf": {
+      "watertight_by_edge_incidence": true,
+      "consistent_winding": true,
+      "connected_body_count": 1,
+      "triangles": 3180,
+      "vertices_after_welding": 1584,
+      "welding_tolerance_mm": 0.0001,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 39193.53837401937,
+      "volume_error_percent": 0.0062563194115959645,
+      "bbox_mm": [
+        138.0,
+        91.1,
+        23.4
+      ],
+      "minimum_z_mm": 0.0,
+      "self_intersection_audit": "Not computed for the tessellated mesh; native saved STEP was validated.",
+      "unit": "millimeter",
+      "build_item_count": 1
+    }
+  }
+}

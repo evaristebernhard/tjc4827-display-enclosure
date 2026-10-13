@@ -1,0 +1,23 @@
+{
+  "queries": [
+    {
+      "query": "LXBF407ZG P1",
+      "total": 0,
+      "items": [],
+      "url": "https://api.step.parts/v1/parts?q=LXBF407ZG+P1&pageSize=3"
+    },
+    {
+      "query": "ESP-01",
+      "total": 0,
+      "items": [],
+      "url": "https://api.step.parts/v1/parts?q=ESP-01&pageSize=3"
+    },
+    {
+      "query": "TJC4827",
+      "total": 0,
+      "items": [],
+      "url": "https://api.step.parts/v1/parts?q=TJC4827&pageSize=3"
+    }
+  ],
+  "fallback": "No matching complete board/display models found. Local mechanical dimensions and user ESP-01 envelope used for documented reference geometry."
+}

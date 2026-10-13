@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TJC4827 简化试装版｜三维展示</title>
+<style>
+:root{color-scheme:light;--ink:#172334;--muted:#66758b;--blue:#17406b;--line:#e3e9f0;--paper:#f4f7fb;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+header{padding:28px max(24px,calc((100vw - 1320px)/2));background:#fff;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--blue);font-weight:700}h1{font-size:clamp(24px,3vw,38px);line-height:1.2;margin:8px 0}.sub{color:var(--muted);margin:0;max-width:760px}
+main{max-width:1320px;margin:24px auto;padding:0 24px 40px}.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,.75fr);gap:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 28px #162a4010}.cardhead{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}.cardhead h2{font-size:17px;margin:0}.hint{font-size:12px;color:var(--muted)}model-viewer{display:block;width:100%;height:min(69vh,720px);min-height:480px;background:#eef3f8}.right{display:grid;gap:20px}.render{width:100%;display:block}.caption{padding:0 18px 16px;color:var(--muted);font-size:12px}.parts{padding:18px 20px}.parts h2{font-size:17px;margin:0 0 14px}.part{display:grid;grid-template-columns:12px 1fr;gap:10px;margin:13px 0}.dot{width:10px;height:10px;border-radius:50%;margin-top:6px;background:#183d66}.dot.green{background:#278454}.dot.gold{background:#d5a74b}.dot.black{background:#222}.part b{display:block;font-size:14px}.part span{display:block;color:var(--muted);font-size:13px}.note{margin-top:16px;padding:12px 14px;background:#f1f6fb;border-radius:10px;color:#53657c;font-size:13px}.mechanism{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.mechanism h3{font-size:14px;margin:0 0 7px}.mechanism p{margin:6px 0;color:#53657c;font-size:13px}.actions{padding:0 20px 20px;display:flex;gap:10px;flex-wrap:wrap}a.button{display:inline-block;text-decoration:none;border-radius:9px;padding:9px 14px;background:var(--blue);color:white;font-weight:600;font-size:13px}a.button.secondary{background:#edf2f7;color:var(--ink)}footer{max-width:1320px;margin:0 auto;padding:0 24px 28px;color:var(--muted);font-size:12px}
+@media(max-width:880px){main{margin-top:16px}.grid{grid-template-columns:1fr}.right{grid-template-columns:1fr 1fr}.right .parts{grid-column:1/-1}model-viewer{height:62vh;min-height:420px}}
+@media(max-width:560px){header{padding:22px 18px}main{padding:0 14px 28px}.right{grid-template-columns:1fr}model-viewer{min-height:390px}.right .parts{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">简化试装版 D · 交互式三维预览</div><h1>TJC4827 便携显示器外壳</h1><p class="sub">4.3 英寸屏幕装在前壳；STM32 和 ESP-01 临时粘在抽拉托板上；先用胶带固定托板，方便拆开调整。</p></header>
+<main><div class="grid">
+<section class="card"><div class="cardhead"><h2>真实 CAD 三维模型</h2><span class="hint">拖动旋转 · 滚轮缩放 · 自动缓慢旋转</span></div><script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script><model-viewer title="TJC4827 简化试装版 D" src="TJC4827_simple_open_layout.glb" poster="项目布局示意.png" alt="TJC4827 前壳、屏幕、STM32和ESP-01抽拉托板的三维布局" camera-controls auto-rotate auto-rotate-delay="2500" touch-action="pan-y" shadow-intensity="1" exposure="1.05"></model-viewer></section>
+<aside class="right">
+<section class="card"><img class="render" src="项目布局示意.png" alt="屏幕前壳、后托板上的 STM32 与 ESP-01、外挂充电宝的布局示意"><div class="caption">外观摆放示意：充电宝在盒子外，用两条魔术贴固定。</div></section>
+<section class="card"><div class="parts"><h2>里面各是什么</h2>
+<div class="part"><i class="dot"></i><div><b>屏幕与前壳</b><span>屏幕固定在前框后面；前壳外形 144 × 96 mm。</span></div></div>
+<div class="part"><i class="dot green"></i><div><b>STM32F407ZG-P1</b><span>按 74.5 × 43.5 mm 预留，装在可拆托板上。</span></div></div>
+<div class="part"><i class="dot gold"></i><div><b>ESP-01</b><span>按 25 × 15 mm 预留，放在 STM32 旁边。</span></div></div>
+<div class="part"><i class="dot black"></i><div><b>充电宝</b><span>外挂在背面；线从侧边开口接入。</span></div></div>
+<div class="note"><b>颜色说明：</b>深蓝是前壳，浅蓝是托板，灰色是屏幕外形；半透明绿色和黄色是 STM32、ESP-01 连同器件与接线的预留空间，不是实物颜色或打印件。</div><div class="mechanism"><h3>托板怎么装？</h3><p>从前壳短边开口对准宽松导轨，直接滑入屏幕后面。没有弹片卡扣，先用一小段胶带横跨接缝固定，调板子和线时再撕开。</p><p><b>间隙：</b>导轨预留约 0.6–0.7 mm 活动量；打印后按实际松紧改参数。</p></div>
+<div class="actions"><a class="button" href="../TJC4827_screwless_simple_D.zip">下载简化版打印文件</a><a class="button secondary" href="装配与供电说明.md">查看装配说明</a></div></section>
+</aside></div></main>
+<footer>这是便于试打和改动的简化原型；右侧外观图仅用于理解摆放，不作为精确制造图。</footer>
+</body></html>
